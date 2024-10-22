@@ -53,3 +53,8 @@ VALUES
 (2, 1, 2),
 (3, 2, 1),
 (4, 3, 2);
+
+-- Query 1: Insert a new student data
+INSERT INTO students(student_name, age, email, frontend_mark, backend_mark, status)
+VALUES ('Khairul Islam', 25, 'janeyrahman900@gmail.com', 59, 60, NULL);
+
