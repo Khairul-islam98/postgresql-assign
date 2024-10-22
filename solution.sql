@@ -14,3 +14,9 @@ CREATE TABLE students(
     status VARCHAR(15)
 )
 
+-- create a courses
+CREATE TABLE courses(
+    course_id SERIAL PRIMARY KEY,
+    course_name VARCHAR(50),
+    credits INTEGER
+)
