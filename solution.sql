@@ -11,13 +11,13 @@ CREATE TABLE students(
     email VARCHAR(100),
     frontend_mark INTEGER,
     backend_mark INTEGER,
-    status VARCHAR(15)
+    status VARCHAR(20)
 );
 
 -- create a courses table
 CREATE TABLE courses(
     course_id SERIAL PRIMARY KEY,
-    course_name VARCHAR(50),
+    course_name VARCHAR(100),
     credits INTEGER
 );
 
@@ -27,3 +27,13 @@ CREATE TABLE enrollment(
     student_id INTEGER REFERENCES students(student_id),
     course_id INTEGER REFERENCES courses(course_id)
 );
+
+-- insert data students table
+INSERT INTO students(student_id, student_name, age, email, frontend_mark, backend_mark, status)
+VALUES
+(1, 'Sameer', 21, 'sameer@example.com', 48, 60, NULL),
+(2, 'Zoya', 23, 'zoya@example.com', 52, 58, NULL),
+(3, 'Nabil', 22, 'nabil@example.com', 37, 46, NULL),
+(4, 'Rafi', 24, 'rafi@example.com', 41, 40, NULL),
+(5, 'Sophia', 22, 'sophia@example.com', 50, 52, NULL),
+(6, 'Hasan', 23, 'hasan@gmail.com', 43, 39, NULL);
