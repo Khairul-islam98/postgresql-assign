@@ -37,3 +37,11 @@ VALUES
 (4, 'Rafi', 24, 'rafi@example.com', 41, 40, NULL),
 (5, 'Sophia', 22, 'sophia@example.com', 50, 52, NULL),
 (6, 'Hasan', 23, 'hasan@gmail.com', 43, 39, NULL);
+
+-- insert data courses table
+INSERT INTO courses(course_id, course_name, credits)
+VALUES
+(1, 'Next.js', 3),
+(2, 'React.js', 4),
+(3, 'Databases', 3),
+(4, 'Prisma', 3);
