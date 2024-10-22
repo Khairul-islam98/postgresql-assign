@@ -90,3 +90,7 @@ LIMIT 2 OFFSET 2;
 SELECT course_name, COUNT(student_id) AS students_enrolled FROM courses
 JOIN enrollment ON courses.course_id = enrollment.course_id
 GROUP BY course_name;
+
+-- Query 7: Calculate and display the average age of all students.
+SELECT ROUND(AVG(age), 2) AS average_age
+FROM students;
